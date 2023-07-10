@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
+
+.equation{
+    background: linear-gradient(120deg, #08ee8ed8, #837c7cda);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.equation h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: wheat;
+}
+
+#firstNumber, #secondNumber{
+    width: 200px;
+    height: 60px;
+    font-size: 40px;
+    padding: 5px;
+    font-weight: bold;
+    border: solid 3px transparent;
+    outline: none;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.507);
+}
+
+#firstNumber:hover, #secondNumber:hover{
+    border: solid 3px wheat;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#calc{
+    cursor: pointer;
+    background-color: rgba(31, 30, 30, 0.13);
+    margin: 30px;
+    width: 130px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: solid 2px black;
+    transition: all .2s ease-in-out;
+}
+
+#calc:hover{
+    background-color: linear-gradient(120deg, #4edb893a, #837c7c21);
+    border: solid 2px wheat;
+    color: wheat;
+    transform: scale(1.03);
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.resultD, .resultY, .resultX{
+    font-size: 2rem;
+    font-weight: bold;
+    color: wheat;
+}

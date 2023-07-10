@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equação Diofântica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="equation">
+
+        <h2>Equação Diofântica</h2>
+
+        <div class="numbers">
+            <input type="number" name="firstNumber" id="firstNumber">
+            <input type="number" name="secondNumber" id="secondNumber">
+        </div>
+
+        <button id="calc">Calcular</button>
+
+        <div class="results">
+
+            <div class="resultD hide" id="equationD">
+                Valor de D = <span id="valueOfD"></span>
+            </div>
+    
+            <div class="resultX hide" id="equationX">
+                Coeficiente de X = <span id="valueOfX"></span>
+            </div>
+    
+            <div class="resultY hide" id="equationY">
+                Coeficiente de Y = <span id="valueOfY"></span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./bezout.js"></script>
+</body>
+</html>
